@@ -7,6 +7,19 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+    style="background-color: #fff; opacity: 0.8; width:100px; height: 10;padding: 40px; cursor: zoom-in;">
+    Mouse Over Me</div>
+    <script>
+      function mOver(obj) {
+      obj.innerHTML = "BEM VINDO"
+      }
+      function mOut(obj) {
+        obj.innerHTML = "Mouse Aqui"
+      }
+    </script>
+
     <img src="logo douglas.png" id="img">
     <div class="fundo"></div>
       <div class="calculadora">
